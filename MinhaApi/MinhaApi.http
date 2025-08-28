@@ -1,0 +1,26 @@
+@MinhaApi_HostAddress = http://localhost:5125
+
+###
+
+# Teste do endpoint Users (seu controller)
+# GET http://localhost:5125/api/users/test
+# Accept: application/json
+
+###
+
+GET {{MinhaApi_HostAddress}}/api/users
+Accept: application/json
+
+###
+
+POST {{MinhaApi_HostAddress}}/api/users/newUser
+Content-Type: application/json
+
+{
+  "email": "teste3@teste.com",
+  "userPassword": "1234567",
+  "username": "Paulo",
+  "role": "Server",
+  "phoneNumber": "906345678",
+  "profileImage": "https://meusite.com/img.png"
+}
