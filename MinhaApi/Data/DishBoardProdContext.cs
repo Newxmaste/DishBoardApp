@@ -85,9 +85,9 @@ public partial class DishBoardProdContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Status_Manager");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Managers)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_Manager_User");
+            entity.HasOne(d => d.User).WithOne(u => u.Manager)
+            .HasForeignKey<Manager>(d => d.UserId)
+            .HasConstraintName("FK_Manager_User");
         });
 
         modelBuilder.Entity<Order>(entity =>
@@ -254,8 +254,8 @@ public partial class DishBoardProdContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Status_Server");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Servers)
-                .HasForeignKey(d => d.UserId)
+            entity.HasOne(d => d.User).WithOne(u => u.Server)
+                .HasForeignKey<Server>(d => d.UserId)
                 .HasConstraintName("FK_Server_User");
         });
 

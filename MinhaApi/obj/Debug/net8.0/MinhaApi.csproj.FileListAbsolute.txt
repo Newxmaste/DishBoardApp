@@ -135,3 +135,4 @@ C:\Users\rodra\OneDrive\Ambiente de Trabalho\DishBoard\MinhaApi\obj\Debug\net8.0
 C:\Users\rodra\OneDrive\Ambiente de Trabalho\DishBoard\MinhaApi\obj\Debug\net8.0\MinhaApi.pdb
 C:\Users\rodra\OneDrive\Ambiente de Trabalho\DishBoard\MinhaApi\obj\Debug\net8.0\MinhaApi.genruntimeconfig.cache
 C:\Users\rodra\OneDrive\Ambiente de Trabalho\DishBoard\MinhaApi\obj\Debug\net8.0\ref\MinhaApi.dll
+C:\Users\rodra\OneDrive\Ambiente de Trabalho\DishBoard\MinhaApi\obj\Debug\net8.0\MinhaApi.sourcelink.json

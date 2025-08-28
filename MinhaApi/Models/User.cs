@@ -23,7 +23,7 @@ public partial class User
 
     public bool IsActive { get; set; } = true;
 
-    public virtual ICollection<Manager> Managers { get; set; } = new List<Manager>();
+    public virtual Server? Server { get; set; }
+    public virtual Manager? Manager { get; set; }
 
-    public virtual ICollection<Server> Servers { get; set; } = new List<Server>();
 }

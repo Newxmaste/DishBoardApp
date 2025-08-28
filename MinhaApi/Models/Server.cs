@@ -21,5 +21,5 @@ public partial class Server
 
     public virtual ICollection<Table> Tables { get; set; } = new List<Table>();
 
-    public virtual User? User { get; set; }
+     public virtual User User { get; set; } = null!;
 }
